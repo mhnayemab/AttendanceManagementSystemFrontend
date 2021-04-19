@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.itvillage.scms">
+<uses-permission android:name="android.permission.INTERNET"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:theme="@style/Theme.SmartCoursesManagmentSystemFrontend">
+        <activity android:name=".MyAttendeeActivity"
+            android:label="My Attendee"></activity>
+        <activity
+            android:name=".AvailableCourseListActivity"
+            android:label="Available Course List" />
+        <activity android:name=".AttendeesActivity"
+            android:label="Attendees List"/>
+        <activity
+            android:name=".AddNewCourseActivity"
+            android:label="Add New Course" />
+        <activity
+            android:name=".SignUpActivity"
+            android:label="Sign Up" />
+        <activity
+            android:name=".StudentHomeActivity"
+            android:label="My Courses" />
+        <activity
+            android:name=".FacultyHomeActivity"
+            android:label="Faculty Panel" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.FullScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
